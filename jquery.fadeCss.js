@@ -32,13 +32,12 @@
                     self.addClass(options.hideClass).removeClass(options.fadeOutClass + ' ' + options.fullOpacityClass);
                 }, options.transitionDuration);
 
-                return this
+                return this;
             }
 
-            throw(
-                new Error('Only "in" or "out" actinons allowed'));
+            throw(new Error('Only "in" or "out" actinons allowed'));
         } catch (e) {
-
+            console.log(e);
         }
         return this;
     };
